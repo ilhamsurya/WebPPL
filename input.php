@@ -129,7 +129,7 @@ function test_input($data) {
 		<input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
   <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
 		</div>
-		<a href="index.php">Lihat</a>
+		<a href="views/index.php">Lihat</a>
 		<input type="submit" >
 
 	</form>

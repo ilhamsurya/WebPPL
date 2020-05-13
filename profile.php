@@ -20,7 +20,7 @@ if ($get_user->num_rows == 1)
          <title><?php echo $profile_data['username'] ?>'s Profile</title>
 </head>
 <body>
-    <a href="index.php">Home</a> | <?php echo $profile_data['username'] ?>'s Profile        
+    <a href="views/index.php">Home</a> | <?php echo $profile_data['username'] ?>'s Profile        
     <h3>Personal Information | <?php $visitor = $_SESSION['username'];
            if ($user == $visitor)
 { ?>            <a href="edit-profile.php?user=<?php echo $profile_data['username'] ?>">Edit Profile</a>            <?php

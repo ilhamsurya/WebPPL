@@ -1,13 +1,12 @@
 <?php
 
-  require('koneksi.php');
+  require('../koneksi.php');
 
   if (isset($_GET['Nim'])) {
   
     $id = $_GET['Nim'];
   } else {
- 
-    header('Location:index.php');
+    header('Location:./views/index.php');
   }
   // query sql menampilkan data berdasarkan ID Biodata
   $sql = "SELECT * FROM mahasiswa WHERE Nim='$id'";
@@ -41,6 +40,7 @@
 <html lang="id" dir="ltr">
   <head>
     <title>PR Detail Page</title>
+    <link href="../assets/css/style.css" rel="stylesheet">
   </head>
   <body>
     <h2>PR Detail Page</h2>
@@ -65,7 +65,7 @@
         </tr>
       </table>
     </form>
-     <p><a href="index.php">Kembali ke Index</a></p>
+     <p><a href="../template.php">Kembali ke Index</a></p>
 
   </body>
 </html>

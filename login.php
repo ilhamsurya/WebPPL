@@ -5,13 +5,13 @@ $database = new database();
  
 if(isset($_SESSION['is_login']))
 {
-    header('location:home.php');
+    header('location:views/home.php');
 }
  
 if(isset($_COOKIE['username']))
 {
   $database->relogin($_COOKIE['username']);
-  header('location:home.php');
+  header('location:views/home.php');
 }
  
 if(isset($_POST['login']))

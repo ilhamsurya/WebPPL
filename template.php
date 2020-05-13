@@ -1,6 +1,6 @@
 <?php
     if(!isset ($_GET['content'])){
-        $vcontent = 'home.php';
+        $vcontent = 'views/home.php';
     }else{
         $vcontent = $_GET['content'];
     }
@@ -42,11 +42,11 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         </tr>
         <tr height="50">
             <td>
-                <a href="template.php?content=<?php echo 'home.php'?>">HOME</a>
-                <a href="template.php?content=<?php echo 'berita.php'?>">BERITA</a>
-                <a href="template.php?content=<?php echo 'index.php'?>">MAHASISWA</a>
+                <a href="template.php?content=<?php echo 'views/home.php'?>">HOME</a>
+                <a href="template.php?content=<?php echo 'views/berita.php'?>">BERITA</a>
+                <a href="template.php?content=<?php echo 'views/index.php'?>">MAHASISWA</a>
                 <a href="template.php?content=<?php echo 'search.php'?>">SEARCH</a>
-                <a href="template.php?content=<?php echo 'kategori_list.php'?>">KATEGORI</a>
+                <a href="template.php?content=<?php echo 'tampil_barang.php'?>">KATEGORI</a>
                 <a href="template.php?content=<?php echo 'logout.php'?>">LOGOUT</a>
 
             </td>
@@ -61,7 +61,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </body>
               <!-- ======= Footer ======= -->
-<footer id="footer">
+<footer id="footer" class="footer">
     <div class="footer-top">
       <div class="container">
 
@@ -71,7 +71,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <div class="container">
 
       <div class="credits">
-        FOOTER SECTION
+        ILHAMSURYA/181511025
       </div>
     </div>
   </footer><!-- End Footer -->

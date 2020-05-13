@@ -74,7 +74,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
           $strTbl .= "<td>". $data['email'] ."</td>";
           $strTbl .= "<td>". $data['hp'] ."</td>";
           $strTbl .= "<td>". $data['gender'] ."</td>";
-          $strTbl .= "<td><a href='detail.php?Nim=".$data['Nim']."'>Lihat Detail</a>  <a href='update.php?Nim=".$data['Nim']."'>Edit</a>  <a href='javascript:hapusData(".$data['Nim'].")'>Hapus Data</a></td> " ;
+          $strTbl .= "<td><a href='utils/detail.php?Nim=".$data['Nim']."'>Lihat Detail</a>  <a href='utils/update.php?Nim=".$data['Nim']."'>Edit</a>  <a href='javascript:hapusData(".$data['Nim'].")'>Hapus Data</a></td> " ;
           $strTbl .= "</tr>";
           $nomor++;
         }

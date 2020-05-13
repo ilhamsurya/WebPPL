@@ -12,10 +12,10 @@
 
     if(mysqli_affected_rows($conn)) {
  
-      header("Location:index.php");
+      header('Location:template.php');
    } else {
 
-      header("Location:index.php");
+    header('Location:template.php');
     }
   }
  ?>
